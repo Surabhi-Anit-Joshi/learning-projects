@@ -19,142 +19,160 @@ export const LoginPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row bg-slate-50/50">
+    <div className="min-h-screen flex flex-col lg:flex-row bg-slate-50">
       
-      {/* LEFT SECTION: Branding, Teal Gradients & Interactive Abstract Illustration */}
-      <section className="lg:w-[55%] bg-gradient-to-br from-teal-800 via-teal-900 to-slate-900 text-white p-8 md:p-16 lg:p-24 flex flex-col justify-between relative overflow-hidden shrink-0">
+      {/* LEFT SECTION: Premium Branding with Modern Gradient & Glassmorphism */}
+      <section className="lg:w-[55%] bg-gradient-to-br from-slate-900 via-blue-900 to-slate-950 text-white p-8 md:p-16 lg:p-24 flex flex-col justify-between relative overflow-hidden shrink-0">
         
-        {/* Abstract shapes & grid background overlay */}
-        <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" />
-        <div className="absolute -left-20 -bottom-20 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute right-0 top-1/4 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+        {/* Subtle gradient mesh background */}
+        <div className="absolute inset-0 opacity-40 bg-gradient-to-br from-blue-500/10 via-transparent to-slate-600/20 pointer-events-none" />
+        <div className="absolute -left-32 top-1/4 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -right-32 bottom-0 w-80 h-80 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none" />
+        
+        {/* Fine grid overlay */}
+        <div className="absolute inset-0 opacity-[0.02] bg-[radial-gradient(#fff_0.5px,transparent_0.5px)] [background-size:40px_40px] pointer-events-none" />
 
         {/* Top Branding Header */}
         <div className="relative z-10 text-left mb-12 lg:mb-0">
-          <div className="flex items-center space-x-3 mb-6">
-            <div className="h-10 w-10 rounded-xl bg-teal-400/20 backdrop-blur-md flex items-center justify-center border border-teal-300/30 text-teal-300">
-              <School className="w-5 h-5" />
+          <div className="flex items-center space-x-3 mb-8">
+            <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-cyan-400/30 to-blue-400/20 backdrop-blur-xl flex items-center justify-center border border-cyan-300/40 text-cyan-300 shadow-lg">
+              <School className="w-6 h-6" />
             </div>
-            <span className="font-extrabold text-sm uppercase tracking-widest text-teal-300">Super Org Command</span>
+            <div className="flex flex-col">
+              <span className="font-black text-xs uppercase tracking-widest text-cyan-300">SYS.CORE</span>
+              <span className="font-light text-xs uppercase tracking-widest text-blue-200/60">On-Line</span>
+            </div>
           </div>
           
-          <div className="space-y-4">
-            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-teal-900/60 text-teal-200 border border-teal-800/40">
-              <Activity className="w-3 h-3 mr-1.5 text-teal-400" />
-              Centralized ERP Portal
-            </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
+          <div className="space-y-5">
+            <div className="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold bg-gradient-to-r from-blue-900/60 to-cyan-900/40 text-cyan-200 border border-cyan-400/20 backdrop-blur-md">
+              <Activity className="w-3.5 h-3.5 mr-2 text-cyan-400" />
+              Unified ERP Platform
+            </div>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter text-white leading-tight">
               School ERP
             </h1>
-            <p className="text-xl md:text-2xl font-semibold text-teal-200">
-              Centralized Management System
+            <p className="text-lg md:text-xl font-light text-blue-100 tracking-wide">
+              Enterprise Command Center
             </p>
           </div>
         </div>
 
-        {/* Abstract Education / Network Illustration */}
+        {/* Premium Network Topology Card with Glassmorphism */}
         <div className="my-8 lg:my-12 relative z-10 flex items-center justify-center">
-          <div className="w-full max-w-md bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 backdrop-blur-md shadow-2xl relative text-left">
-            <div className="flex items-center justify-between mb-6 pb-4 border-b border-white/10">
-              <span className="text-xs font-bold text-teal-300 uppercase tracking-widest flex items-center">
-                <Network className="w-4 h-4 mr-2" /> Live Network Topology
+          <div className="w-full max-w-md bg-white/8 border border-white/15 rounded-3xl p-7 md:p-9 backdrop-blur-xl shadow-2xl relative text-left">
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/10 to-transparent pointer-events-none" />
+            
+            <div className="relative z-10 flex items-center justify-between mb-6 pb-5 border-b border-white/10">
+              <span className="text-xs font-bold text-cyan-300 uppercase tracking-widest flex items-center">
+                <Network className="w-4 h-4 mr-2.5" /> Live Network Topology
               </span>
-              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+              <div className="flex items-center gap-1.5">
+                <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse shadow-lg shadow-emerald-400/50" />
+                <span className="text-[10px] font-semibold text-emerald-300">Active</span>
+              </div>
             </div>
 
-            {/* Simulated topology graphic */}
-            <div className="relative h-44 flex items-center justify-center">
-              {/* Center HUB */}
-              <div className="absolute z-20 h-16 w-16 rounded-full bg-teal-500 flex flex-col items-center justify-center border-4 border-slate-900 shadow-lg text-white">
+            {/* Premium Topology Visualization */}
+            <div className="relative h-48 flex items-center justify-center">
+              {/* Center Premium HUB */}
+              <div className="absolute z-20 h-16 w-16 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex flex-col items-center justify-center border-2 border-white/20 shadow-2xl shadow-cyan-500/30 text-white backdrop-blur-sm">
                 <Shield className="w-6 h-6" />
-                <span className="text-[7px] font-bold uppercase mt-0.5">HQ HUB</span>
+                <span className="text-[8px] font-black uppercase mt-1 tracking-wide">HQ Hub</span>
               </div>
 
-              {/* Satellite nodes */}
+              {/* Premium Satellite Nodes */}
               {/* Node 1: Mangalore */}
-              <div className="absolute top-0 left-6 z-10 p-2.5 bg-white/10 rounded-lg border border-white/20 flex flex-col items-center shadow-md animate-float">
-                <span className="text-[10px] font-bold">St. Agnes</span>
-                <span className="text-[8px] text-teal-300">Mangalore</span>
+              <div className="absolute top-0 left-4 z-10 p-3 bg-white/12 rounded-xl border border-white/20 flex flex-col items-center shadow-lg backdrop-blur-md animate-float hover:bg-white/16 transition-all">
+                <span className="text-[10px] font-bold text-white">St. Agnes</span>
+                <span className="text-[8px] text-cyan-300 font-medium">Mangalore</span>
               </div>
 
               {/* Node 2: Bangalore */}
-              <div className="absolute bottom-0 right-6 z-10 p-2.5 bg-white/10 rounded-lg border border-white/20 flex flex-col items-center shadow-md animate-float [animation-delay:1.5s]">
-                <span className="text-[10px] font-bold">Kristu Jayanti</span>
-                <span className="text-[8px] text-teal-300">Bangalore</span>
+              <div className="absolute bottom-0 right-4 z-10 p-3 bg-white/12 rounded-xl border border-white/20 flex flex-col items-center shadow-lg backdrop-blur-md animate-float [animation-delay:1.5s] hover:bg-white/16 transition-all">
+                <span className="text-[10px] font-bold text-white">Kristu Jayanti</span>
+                <span className="text-[8px] text-cyan-300 font-medium">Bangalore</span>
               </div>
 
               {/* Node 3: Kundapura */}
-              <div className="absolute top-4 right-10 z-10 p-2.5 bg-white/10 rounded-lg border border-white/20 flex flex-col items-center shadow-md animate-float [animation-delay:3s]">
-                <span className="text-[10px] font-bold">Sacred Heart</span>
-                <span className="text-[8px] text-teal-300">Kundapura</span>
+              <div className="absolute top-3 right-8 z-10 p-3 bg-white/12 rounded-xl border border-white/20 flex flex-col items-center shadow-lg backdrop-blur-md animate-float [animation-delay:3s] hover:bg-white/16 transition-all">
+                <span className="text-[10px] font-bold text-white">Sacred Heart</span>
+                <span className="text-[8px] text-cyan-300 font-medium">Kundapura</span>
               </div>
 
               {/* Node 4: Mysore */}
-              <div className="absolute bottom-4 left-10 z-10 p-2.5 bg-white/10 rounded-lg border border-white/20 flex flex-col items-center shadow-md animate-float [animation-delay:4.5s]">
-                <span className="text-[10px] font-bold">Little Flower</span>
-                <span className="text-[8px] text-teal-300">Mysore</span>
+              <div className="absolute bottom-3 left-8 z-10 p-3 bg-white/12 rounded-xl border border-white/20 flex flex-col items-center shadow-lg backdrop-blur-md animate-float [animation-delay:4.5s] hover:bg-white/16 transition-all">
+                <span className="text-[10px] font-bold text-white">Little Flower</span>
+                <span className="text-[8px] text-cyan-300 font-medium">Mysore</span>
               </div>
 
-              {/* Connecting lines via standard SVG */}
-              <svg className="absolute inset-0 w-full h-full text-white/15" fill="none">
-                {/* Lines radiating from center (160, 88) */}
-                <line x1="200" y1="88" x2="80" y2="35" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4" />
-                <line x1="200" y1="88" x2="320" y2="140" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4" />
-                <line x1="200" y1="88" x2="310" y2="40" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4" />
-                <line x1="200" y1="88" x2="90" y2="135" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4" />
+              {/* Modern Connection Lines */}
+              <svg className="absolute inset-0 w-full h-full" fill="none">
+                <defs>
+                  <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="rgba(34,211,238,0.3)" />
+                    <stop offset="100%" stopColor="rgba(6,182,212,0.1)" />
+                  </linearGradient>
+                </defs>
+                <line x1="200" y1="96" x2="78" y2="40" stroke="url(#lineGradient)" strokeWidth="1.5" opacity="0.6" />
+                <line x1="200" y1="96" x2="328" y2="144" stroke="url(#lineGradient)" strokeWidth="1.5" opacity="0.6" />
+                <line x1="200" y1="96" x2="318" y2="45" stroke="url(#lineGradient)" strokeWidth="1.5" opacity="0.6" />
+                <line x1="200" y1="96" x2="98" y2="143" stroke="url(#lineGradient)" strokeWidth="1.5" opacity="0.6" />
               </svg>
             </div>
 
-            {/* Quick floating stat overlays inside graphic container */}
-            <div className="mt-4 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-teal-200/80">
-              <span className="flex items-center gap-1">
-                <Users className="w-3.5 h-3.5 text-teal-400" />
-                <strong>12,400+</strong> Enrolled Students
+            {/* Stats Footer */}
+            <div className="relative z-10 mt-6 pt-5 border-t border-white/10 flex items-center justify-between text-xs text-cyan-200/90">
+              <span className="flex items-center gap-2 font-semibold">
+                <Users className="w-4 h-4 text-cyan-400" />
+                <span><strong>12,400+</strong> Students</span>
               </span>
-              <span><strong>4 / 4</strong> Online</span>
+              <span className="font-semibold text-emerald-400"><strong>4 / 4</strong> Online</span>
             </div>
           </div>
         </div>
 
-        {/* Bottom Platform Description */}
+        {/* Bottom Premium Description */}
         <div className="relative z-10 text-left max-w-xl">
-          <h3 className="text-lg font-bold text-white mb-2">Centralized Command Workspace</h3>
-          <p className="text-sm text-teal-100/70 leading-relaxed">
-            The Super Admin platform grants organization leaders complete monitoring capabilities across all regional school hubs. 
-            Review performance parameters, administer user accounts, enforce security protocols, and control billing options from a single console.
+          <h3 className="text-xl font-bold text-white mb-3 tracking-tight">Centralized Command Workspace</h3>
+          <p className="text-sm text-blue-100/75 leading-relaxed font-light">
+            The unified Super Admin interface delivers comprehensive oversight across all regional school operations. 
+            Monitor key metrics, manage user access, enforce security standards, and optimize institutional performance from a single command center.
           </p>
         </div>
       </section>
 
-      {/* RIGHT SECTION: Interactive Login Panel & Read-Only Branch Directory */}
-      <section className="lg:w-[45%] bg-slate-50/40 p-6 md:p-12 lg:p-16 flex flex-col justify-center overflow-y-auto">
+      {/* RIGHT SECTION: Modern Login & Branch Directory */}
+      <section className="lg:w-[45%] bg-gradient-to-b from-slate-50 to-blue-50/30 p-6 md:p-12 lg:p-16 flex flex-col justify-center overflow-y-auto">
         <div className="max-w-md w-full mx-auto space-y-8 py-8">
           
-          {/* Main interactive login card */}
+          {/* Main Login Card */}
           <SuperAdminLogin onLoginSuccess={handleLoginSuccess} />
 
-          {/* Separation OR Divider */}
-          <div className="relative flex items-center justify-center my-6">
-            <div className="border-t border-gray-200 w-full" />
-            <span className="absolute bg-[#fafbfe] px-4 text-xs font-bold text-gray-400 uppercase tracking-widest">
-              Or
+          {/* Premium Divider */}
+          <div className="relative flex items-center justify-center my-8">
+            <div className="border-t border-gray-300/40 w-full" />
+            <span className="absolute bg-gradient-to-r from-slate-50 to-blue-50/30 px-4 text-xs font-bold text-gray-500 uppercase tracking-widest">
+              Or Browse
             </span>
           </div>
 
-          {/* Secondary Action: Read-Only Branches */}
-          <div className="space-y-4">
+          {/* Branches Section */}
+          <div className="space-y-5">
             <div className="text-left">
-              <div className="flex items-center space-x-2 text-primary-700">
-                <Network className="w-5 h-5 text-primary-700" />
-                <h3 className="text-lg font-extrabold text-gray-900 tracking-tight">View Branches</h3>
+              <div className="flex items-center space-x-2">
+                <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-cyan-400/20 to-blue-400/10 flex items-center justify-center border border-cyan-300/20">
+                  <Network className="w-4.5 h-4.5 text-blue-700" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 tracking-tight">View Branches</h3>
               </div>
-              <p className="text-xs text-gray-500 mt-1">
-                Explore all registered schools and branches under this organization.
+              <p className="text-xs text-gray-500 mt-2 font-light">
+                Explore all registered schools and branches.
               </p>
             </div>
 
-            {/* Grid of branches */}
-            <div className="space-y-3.5">
+            {/* Branch Cards Grid */}
+            <div className="space-y-3">
               {mockBranches.map((branch) => (
                 <BranchCard
                   key={branch.id}
@@ -164,10 +182,11 @@ export const LoginPage: React.FC = () => {
               ))}
             </div>
 
-            <div className="text-center pt-2">
-              <span className="inline-flex items-center text-xs font-bold text-teal-700/80 hover:text-teal-800 cursor-pointer select-none group">
-                Authorized super admin credentials required to modify branch setups
-                <ArrowRight className="w-3.5 h-3.5 ml-1 transition-transform group-hover:translate-x-0.5" />
+            {/* Access Notice */}
+            <div className="text-center pt-3">
+              <span className="inline-flex items-center text-xs font-medium text-gray-600 hover:text-blue-700 cursor-pointer select-none group transition-colors">
+                Super admin credentials required
+                <ArrowRight className="w-3 h-3 ml-1.5 transition-transform group-hover:translate-x-0.5" />
               </span>
             </div>
           </div>
