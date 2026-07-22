@@ -44,15 +44,15 @@ export const LoginPage: React.FC = () => {
             </div>
           </div>
           
-          <div className="space-y-5">
+          <div className="space-y-6">
             <div className="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold bg-gradient-to-r from-blue-900/60 to-cyan-900/40 text-cyan-200 border border-cyan-400/20 backdrop-blur-md">
               <Activity className="w-3.5 h-3.5 mr-2 text-cyan-400" />
               Unified ERP Platform
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter text-white leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter text-white leading-[1.17]">
               School ERP
             </h1>
-            <p className="text-lg md:text-xl font-light text-blue-100 tracking-wide">
+            <p className="text-lg md:text-xl font-light text-blue-100 tracking-wide leading-relaxed">
               Enterprise Command Center
             </p>
           </div>
@@ -134,8 +134,8 @@ export const LoginPage: React.FC = () => {
 
         {/* Bottom Premium Description */}
         <div className="relative z-10 text-left max-w-xl">
-          <h3 className="text-xl font-bold text-white mb-3 tracking-tight">Centralized Command Workspace</h3>
-          <p className="text-sm text-blue-100/75 leading-relaxed font-light">
+          <h3 className="text-2xl font-bold text-white mb-4 tracking-tight leading-[1.33]">Centralized Command Workspace</h3>
+          <p className="text-sm text-blue-100/75 leading-[1.43] font-light">
             The unified Super Admin interface delivers comprehensive oversight across all regional school operations. 
             Monitor key metrics, manage user access, enforce security standards, and optimize institutional performance from a single command center.
           </p>
@@ -164,9 +164,9 @@ export const LoginPage: React.FC = () => {
                 <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-cyan-400/20 to-blue-400/10 flex items-center justify-center border border-cyan-300/20">
                   <Network className="w-4.5 h-4.5 text-blue-700" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 tracking-tight">View Branches</h3>
+                <h3 className="text-lg font-bold text-gray-900 tracking-tight leading-[1.33]">View Branches</h3>
               </div>
-              <p className="text-xs text-gray-500 mt-2 font-light">
+              <p className="text-xs text-gray-500 mt-2 font-light leading-[1.43]">
                 Explore all registered schools and branches.
               </p>
             </div>

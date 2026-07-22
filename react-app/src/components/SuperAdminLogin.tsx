@@ -62,10 +62,10 @@ export const SuperAdminLogin: React.FC<SuperAdminLoginProps> = ({ onLoginSuccess
     <Card className="shadow-xl border-gray-100/60 bg-white/90 backdrop-blur-md">
       <CardContent className="p-8 md:p-10 text-left">
         <div className="mb-8">
-          <h2 className="text-2xl font-extrabold text-gray-900 tracking-tight">
+          <h2 className="text-2xl font-extrabold text-gray-900 tracking-tight leading-[1.33]">
             Super Admin Login
           </h2>
-          <p className="text-sm text-gray-500 mt-1">
+          <p className="text-sm text-gray-500 mt-2 leading-[1.43]">
             Access the organization-wide centralized management portal.
           </p>
         </div>
@@ -143,18 +143,18 @@ export const SuperAdminLogin: React.FC<SuperAdminLoginProps> = ({ onLoginSuccess
           </Button>
         </form>
 
-        <div className="mt-6 p-4.5 bg-gray-50 border border-gray-100/80 rounded-lg">
-          <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wide mb-1">
+        <div className="mt-6 p-5 bg-gray-50 border border-gray-100/80 rounded-lg">
+          <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wide mb-3 leading-[1.43]">
             Demo Access Credentials
           </h4>
-          <div className="flex flex-col sm:flex-row sm:justify-between text-xs text-gray-600 gap-1 sm:gap-0 mt-2">
-            <div>
+          <div className="flex flex-col sm:flex-row sm:justify-between text-xs text-gray-600 gap-2 sm:gap-0 mt-3">
+            <div className="leading-[1.43]">
               <span className="font-medium text-gray-500">Email: </span>
               <code className="bg-white px-1.5 py-0.5 border border-gray-200 rounded text-primary-700 select-all font-semibold font-mono">
                 admin@schoolerp.com
               </code>
             </div>
-            <div>
+            <div className="leading-[1.43]">
               <span className="font-medium text-gray-500">Password: </span>
               <code className="bg-white px-1.5 py-0.5 border border-gray-200 rounded text-primary-700 select-all font-semibold font-mono">
                 admin123
