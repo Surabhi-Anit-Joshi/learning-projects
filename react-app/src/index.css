@@ -18,6 +18,35 @@
   --color-primary-900: #134e4a;
   --color-primary-950: #042f2e;
 
+  /* Typography Sizing Scale */
+  --text-h1-size: 48px;
+  --text-h1-line-height: 56px;
+  --text-h1-gap: 24px;
+  
+  --text-h2-size: 40px;
+  --text-h2-line-height: 48px;
+  --text-h2-gap: 20px;
+  
+  --text-h3-size: 32px;
+  --text-h3-line-height: 40px;
+  --text-h3-gap: 16px;
+  
+  --text-h4-size: 24px;
+  --text-h4-line-height: 32px;
+  --text-h4-gap: 12px;
+  
+  --text-subtitle-size: 16px;
+  --text-subtitle-line-height: 24px;
+  --text-subtitle-gap: 12px;
+  
+  --text-body-size: 14px;
+  --text-body-line-height: 20px;
+  --text-body-gap: 8px;
+
+  /* Layout Specifications */
+  --sidebar-width: 304px;
+  --sidebar-width-collapsed: 80px;
+
   /* Custom animations */
   --animate-fade-in-up: fade-in-up 0.5s ease-out forwards;
   --animate-fade-in-right: fade-in-right 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
