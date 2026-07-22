@@ -30,10 +30,10 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         {label && (
           <label
             htmlFor={id}
-            className="block text-xs font-semibold text-gray-700 mb-1.5 uppercase tracking-wider"
+            className="block text-xs font-bold text-gray-900 mb-2 uppercase tracking-widest"
           >
             {label}
-            {required && <span className="text-red-500 ml-1" aria-hidden="true">*</span>}
+            {required && <span className="text-primary-700 ml-1 font-bold" aria-hidden="true">*</span>}
           </label>
         )}
         <div className="relative rounded-lg shadow-sm">
@@ -47,17 +47,17 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
             id={id}
             type={type}
             className={`
-              block w-full rounded-lg text-sm transition-all duration-200 bg-white border
+              block w-full rounded-lg text-sm font-medium transition-all duration-200 bg-white border
               ${leftIcon ? 'pl-10' : 'pl-4'}
               ${rightIcon ? 'pr-10' : 'pr-4'}
-              py-2.5 text-gray-900 placeholder-gray-400
+              py-2.5 text-gray-900 placeholder-gray-500
               focus:ring-2 focus:ring-primary-700/20 focus:border-primary-700 outline-none
               ${
                 error
-                  ? 'border-red-300 text-red-900 focus:ring-red-200 focus:border-red-500'
-                  : 'border-gray-200 hover:border-gray-300'
+                  ? 'border-red-400 text-red-900 focus:ring-red-200 focus:border-red-500'
+                  : 'border-gray-300 hover:border-primary-700/30'
               }
-              disabled:bg-gray-50 disabled:text-gray-500 disabled:border-gray-200 disabled:cursor-not-allowed
+              disabled:bg-light-hover disabled:text-gray-500 disabled:border-gray-200 disabled:cursor-not-allowed
               ${className}
             `}
             aria-invalid={error ? 'true' : 'false'}
