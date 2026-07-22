@@ -13,8 +13,8 @@ export const Card: React.FC<CardProps> = ({
   return (
     <div
       className={`
-        bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden
-        ${hoverEffect ? 'hover:shadow-md hover:border-gray-200/80 transition-all duration-300 transform hover:-translate-y-0.5' : ''}
+        bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden
+        ${hoverEffect ? 'hover:shadow-md hover:border-primary-200/50 transition-all duration-300 transform hover:-translate-y-0.5' : ''}
         ${className}
       `}
       {...props}
@@ -82,7 +82,7 @@ export const CardFooter: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
 }) => {
   return (
     <div
-      className={`px-6 py-4 bg-gray-50/70 border-t border-gray-50 flex items-center ${className}`}
+      className={`px-6 py-4 bg-light-hover border-t border-primary-100/30 flex items-center ${className}`}
       {...props}
     >
       {children}

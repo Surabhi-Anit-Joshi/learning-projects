@@ -31,10 +31,10 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
     // Variant styles
     const variants = {
-      primary: 'bg-primary-700 hover:bg-primary-800 text-white shadow-sm hover:shadow focus:ring-primary-700',
-      secondary: 'bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 shadow-sm focus:ring-gray-300',
-      outline: 'bg-transparent hover:bg-primary-50 text-primary-700 border border-primary-600 focus:ring-primary-700',
-      ghost: 'bg-transparent hover:bg-gray-100 text-gray-600 hover:text-gray-900 focus:ring-gray-300',
+      primary: 'bg-primary-700 hover:bg-primary-800 text-white shadow-md hover:shadow-lg focus:ring-primary-700',
+      secondary: 'bg-white hover:bg-gray-50 text-gray-700 border border-gray-300 shadow-sm focus:ring-gray-300',
+      outline: 'bg-light-hover hover:bg-primary-100 text-primary-700 border border-primary-700 font-semibold focus:ring-primary-700',
+      ghost: 'bg-transparent hover:bg-light-hover text-primary-700 hover:text-primary-800 focus:ring-primary-700 font-medium',
     };
 
     // Size styles

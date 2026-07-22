@@ -71,8 +71,8 @@ export const SuperAdminLogin: React.FC<SuperAdminLoginProps> = ({ onLoginSuccess
         </div>
 
         {loginError && (
-          <div className="mb-6 p-4 rounded-lg bg-red-50 border border-red-100 text-red-700 text-xs font-semibold flex items-start space-x-2">
-            <span className="mt-0.5">⚠️</span>
+          <div className="mb-6 p-4 rounded-lg bg-red-50 border border-red-200 text-red-700 text-xs font-semibold flex items-start space-x-2">
+            <span className="mt-0.5" aria-hidden="true">⚠️</span>
             <span>{loginError}</span>
           </div>
         )}
@@ -127,7 +127,7 @@ export const SuperAdminLogin: React.FC<SuperAdminLoginProps> = ({ onLoginSuccess
                 e.preventDefault();
                 alert('In a real application, this would trigger a password reset link email.');
               }}
-              className="text-sm font-bold text-primary-700 hover:text-primary-800 hover:underline transition-all"
+              className="text-sm font-bold text-primary-700 hover:text-primary-800 hover:underline transition-colors"
             >
               Forgot Password?
             </a>
@@ -143,20 +143,20 @@ export const SuperAdminLogin: React.FC<SuperAdminLoginProps> = ({ onLoginSuccess
           </Button>
         </form>
 
-        <div className="mt-6 p-5 bg-gray-50 border border-gray-100/80 rounded-lg">
-          <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wide mb-3 leading-[1.43]">
+        <div className="mt-6 p-5 bg-light-hover border border-primary-200/40 rounded-lg">
+          <h4 className="text-xs font-bold text-gray-900 uppercase tracking-widest mb-3 leading-[1.43]">
             Demo Access Credentials
           </h4>
-          <div className="flex flex-col sm:flex-row sm:justify-between text-xs text-gray-600 gap-2 sm:gap-0 mt-3">
+          <div className="flex flex-col sm:flex-row sm:justify-between text-xs text-gray-700 gap-2 sm:gap-0 mt-3">
             <div className="leading-[1.43]">
-              <span className="font-medium text-gray-500">Email: </span>
-              <code className="bg-white px-1.5 py-0.5 border border-gray-200 rounded text-primary-700 select-all font-semibold font-mono">
+              <span className="font-semibold text-gray-600">Email: </span>
+              <code className="bg-white px-2 py-1 border border-primary-300/40 rounded text-primary-700 select-all font-semibold font-mono text-xs">
                 admin@schoolerp.com
               </code>
             </div>
             <div className="leading-[1.43]">
-              <span className="font-medium text-gray-500">Password: </span>
-              <code className="bg-white px-1.5 py-0.5 border border-gray-200 rounded text-primary-700 select-all font-semibold font-mono">
+              <span className="font-semibold text-gray-600">Password: </span>
+              <code className="bg-white px-2 py-1 border border-primary-300/40 rounded text-primary-700 select-all font-semibold font-mono text-xs">
                 admin123
               </code>
             </div>
